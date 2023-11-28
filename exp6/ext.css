@@ -1,15 +1,19 @@
 body
-{
-background-color:linen;
-}
-h1
-{
-color:#e68927;
-margin-left:40px;
-}
-p
-{
-margin-left:40px;
-color:maroon;
-font-family:serif;
-}
+	{
+	background-color:pink;
+	background-image:url("/home/ksb/amala/web/lab exp/image3.png");
+	background-repeat:no-repeat;
+	background-size:1300px,800px;
+	}
+h1	{
+	font-weight:normal;
+	letter-spacing:2em;
+	margin-bottom:2em;
+	text-transform:uppercase;
+	}
+p	{
+	font-weight:normal;
+	text-align:center;
+	background-color:yellow;
+	}
+
