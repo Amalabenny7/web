@@ -1,0 +1,48 @@
+ <html>
+    <head>
+    <script>
+    function exam()
+    {
+    var m=0;
+    if(document.examForm.one.value=="application software")
+    m=m+1;
+    if(document.examForm.two.value=="modifier")
+    m=m+1;
+    if(document.examForm.three.value=="Operating system")
+    m=m+1;
+    alert("Thankyou for taking the online exam \n Your score is:"+m+" out of 3");
+    }
+    </script>
+    </head>
+    <body bgcolor="#DAF7A6">
+    <form name="examForm" onsubmit="return exam()" method="get">
+    <h1><CENTER><u><font color="#21618c">EXAM FORM</u></h1></font></center></font>
+    FULL NAME	:<input type="text" name="name"/><br>
+    <br>
+    SUBJECT	:<input type="text" name="subject"/>
+    <p> 1)MS word is the example of ?<br><br>
+     <input type="radio" name="one" value="an operating system">an operating system<br>
+    <input type="radio" name="one" value="an processing device">an processing device<br>
+    <input type="radio" name="one" value="application software">application software<br>
+    <input type="radio" name="one" value="an input device">an input device<br>
+    </p>
+    <p>2)  Ctrl, Shift and Alt are called .......... keys ? <br><br>
+    <input type="radio" name="two" value="alphanumeric">alphanumeric<br>
+    <input type="radio" name="two" value="modifier">modifier<br>
+    <input type="radio" name="two" value="function">function<br>
+    <input type="radio" name="two" value="adjustment">adjustment<br>
+    </p>
+    <p>3) A computer cannot "boot" if it does not have the _____?<br><br>
+    <input type="radio" name="three" value="Compiler">Compiler<br>
+    <input type="radio" name="three" value="Loader">Loader <br>
+    <input type="radio" name="three" value="Operating system">Operating system <br>
+    <input type="radio" name="three" value="Assembler">Assembler<br>
+    </p>
+    <p>
+    <center>
+    <input type="submit" value="SUBMIT">
+    <input type="reset" value="RESET">
+    </center>
+    </p>
+    </body>
+    </html>
