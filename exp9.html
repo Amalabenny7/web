@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>form</title>
+</head>
+<body bgcolor="pink">
+<h1><center><font color="black"><strong>REGISTRATION FORM</strong></font></center></h1>
+<h1><font color="blue">please enter the following biodata</font></h1>
+<form name="form1" onsubmit="return validateform()">
+<h2><strong>first name:<input type="text" id="name" name="fname" size="15" maxlength="25">
+<br>
+<br>
+last name:<input type="text" id="name" name="lname" size="15" maxlength="25">
+<br>
+<br>
+Nationality:<input type="text" name="country" size="15" maxlength="25">
+<br>
+<br>
+phone number:<input type="text" id="number" name="phno" size="10" maxlength="12">
+<br>
+<br>
+password:<input type="text" name="pass" size="10" maxlength="12">
+<br>
+<br>
+Gender:<br><input type="radio" id="female" name="gender" value="Female"/>Female<br><input type="radio" id="male" name="gender" value="Male"/>male<br><input type="radio" id="other" name="gender" value="other"/>other<br><br>
+Address:<br><textarea name="address"></textarea>
+<br>
+<br>
+languages:<br><input type="checkbox" name="languages" id="malayalam"/>malayalam<br><input type="checkbox" name="languages" id="hindi"/>hindi<br><input type="checkbox" name="languages" id="english"/>english<br><input type="checkbox" name="languages" id="tamil"/>tamil
+<br><br>
+upload your certifictes    <input type="file" name="upload"><br>
+<br><br>
+<input type="submit" name="register">
+<input type="reset" name="reset">
+</strong></h2>
+</form>
+
+<script>
+function validateform()
+{
+var fname=document.form1.fname.value;
+var lname=document.form1.lname.value;
+var pass=document.form1.pass.value;
+var phno=document.form1.phno.value;
+
+if(fname==null || fname=="")
+{
+	alert("firstname can't be blank");
+	return false;
+}
+else if(pass.length<6)
+{
+	alert("password must be atleast 6 characters");onsubmit="return validateform()"
+	return false;
+}
+else if(phno.value.length<10)
+{
+	alert("invalid mobile number");
+	return false;
+}
+
+else if(lname==null || lname=="")
+{
+	alert("lastname can't be blank");
+	return false;
+}
+}</script>
+</body>
+</html>
